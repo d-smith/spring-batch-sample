@@ -1,0 +1,21 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                %n%d{ISO8601}  %p [%c] %n%msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="com.ds.springbatch">
+        <level value="DEBUG"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

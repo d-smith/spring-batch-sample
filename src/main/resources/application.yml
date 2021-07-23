@@ -1,0 +1,5 @@
+spring:
+  main:
+    allow-bean-definition-overrides: true
+    web-environment: false
+    web-application-type: none
